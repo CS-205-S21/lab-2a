@@ -80,6 +80,8 @@ $ qtcreator
   - Tell qtcreator to use the correct terminal
     - Tools > Options > Environment (on the left) > System > Under "Terminal:" Select "/usr/bin/xterm -e"
 
+~[](figs/terminal.png)
+
   - Click "New Project" or select "File > New File or Project"
   - Select "Other Project > Subdirs Project > Choose"
   - In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process. Also, the field "Create in" is the directory where you put the repo.
