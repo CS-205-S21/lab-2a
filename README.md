@@ -28,13 +28,15 @@ Once you have connected to your account with the -X or -Y flag on the Department
 or
 ```$ qtcreator```
 
-
+You should see a clock (or the QT creator IDE) appear. (If you don't see anything immediatly, allow a minute or so for the command to be processed.) You can skip the next "Trobleshooting" section if the QT Creator GUI is visible.
 
 ## Troubleshooting X11 Connections
--X or -Y 
 
-1. Install the latest copy of Qt Creator.
-If you have an older copy of Qt Creator installed on your computer, remove it. Obtain a copy of the open-source version of Qt Creator via this link.
+If you are on Mac, you may need to download and install [xQuartz](https://www.xquartz.org) to enable X11 forwarding.
+
+
+## Configure QT Creator and Git
+
 
 
 2. Check that Git and Qt Creator are configured by completing the Git and Qt tutorial (see Tutorials section).
