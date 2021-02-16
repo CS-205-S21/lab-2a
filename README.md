@@ -102,22 +102,47 @@ $ qtcreator
   - Again, nothing to do on the Summary screen. QTCreator is notifying you about all the files being created. 
   - In the end you will have the following. Click the "Run"
   
-  
-
+  ![](figs/final.png)
 
 
 --------------
 
 
-  - Now it's time to add a new subproject. Right-click the top item in your repository (for me that is "qtrepo"), then select "New Subproject." Again choose "Non-Qt project > C++ project" and name it "tools."
+- With Terminal, change directory into your repository and add any new files, perform a commit, and push the changes so your lab partner has access to everything.
 
+```
+smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
-4. Use the "tools" subproject for Lab 2b. Also, when creating new classes, use the "Add New ..." menu by right-clicking on the subproject name.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
-5. With Terminal, change directory into your repository and add any new files, perform a commit, and push the changes so your lab partner has access to everything.
+        new file:   hello/hello.pro
+        new file:   hello/main.cpp
+        new file:   lab-2a.pro
+smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git add -A # add all the files to the git repo
+smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git commit -m "Created lab-2a qt project and hello sub project"
+smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git push
+```
 
-6. You can experiment with the Git commands provided in the Tools menu, but you still need to work with the command line as you go along.
+## Testing with your lab partner
+Time to test if things are working. Perform the following steps:
+  - Start Qt Creator and click "+ New Project".
+  - Under projects choose "Import Project".
+  - Then select "Git Clone" and choose.
+  - For the location window, set the following options:
 
-7. For the remainder of the project, you do not need to perform any branching — just focus on normal commits and pushes and pulls. The next part of the lab will just require you and your partner to work on separate classes.
+```
+Repository: ssh url from github (yours will differ)
+Path : where you would like to place the repository.
+Directory : name of the repository.
+```
 
-## Git and QT Creator
+- Once the checkout is successful, if you can compile and run the "hello" project, you are done!
+
+## Notes
+- You can experiment with the Git commands provided in the Tools menu, but you still need to work with the command line as you go along.
+
+- For the remainder of the project, you do not need to perform any branching — just focus on normal commits and pushes and pulls. The next part of the lab will just require you and your partner to work on separate classes.
+
