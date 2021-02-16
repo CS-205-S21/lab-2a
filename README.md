@@ -32,10 +32,30 @@ You should see a clock (or the QT creator IDE) appear. (If you don't see anythin
 
 ## Troubleshooting X11 Connections
 
-If you are on Mac, you may need to download and install [xQuartz](https://www.xquartz.org) to enable X11 forwarding.
+If you are on Mac, you may need to download and install [xQuartz](https://www.xquartz.org) to enable X11 forwarding. Once you have downloaded and installed xQuartz, from the terminal retry ssh -X command:
+
+```
+$ ssh -X smithjus@139.147.9.XXX   # Use -X on Mac and Linux
+```
 
 
 ## Configure QT Creator and Git
+In general, your workflow will be to (1) create a folder for each lab you are working on; (2) clone the repository for that lab into that folder; (3) then create a QT project in that folder. The subsequent steps will walk you through how to do that for the first time.
+
+```
+$ cd ~          # Make sure you are in your home directory
+$ cd labs       # Keep all your labs in a dir called labs to keep things tidy :)
+                # You may need to create this dir if you haven't already
+$ mkdir lab-2a  # Make a new (appropriately named) dir for this lab
+$ cd lab-2a     # Let's head into that new dir
+```
+
+Now clone the starter code from GitHub
+
+```
+$ git clone <>
+```
+
 
 
 
