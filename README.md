@@ -32,11 +32,26 @@ You should see a clock (or the QT creator IDE) appear. (If you don't see anythin
 
 ## Troubleshooting X11 Connections
 
-If you are on Mac, you may need to download and install [xQuartz](https://www.xquartz.org) to enable X11 forwarding. Once you have downloaded and installed xQuartz, from the terminal retry ssh -X command:
+If you are on Mac, follow [these instructions](https://content.byui.edu/file/cddfb9c0-a825-4cfe-9858-28d5b4c218fe/1/Course/Setup-XQuartz.html) to install [xQuartz](https://www.xquartz.org) to enable X11 forwarding. 
+
+Once you have downloaded and installed xQuartz, you will need to log out and log back in to your machine.
+
+From the terminal, open Xquartz
+
+```
+$ open -a Xquartz
+```
+
+Now open up the preferences from the top menu and go to the last tab ‘security’. There we need to make sure the “allow connections from network clients” is checked “on”.
+
+Now, from your terminal, run:
 
 ```
 $ ssh -X smithjus@139.147.9.XXX   # Use -X on Mac and Linux
 ```
+
+If you are still unable to connect, try manually opening an XQuartz terminal and ssh'ing from there (instead of from terminal).
+
 
 
 ## Configure QT Creator and Git
