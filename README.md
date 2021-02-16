@@ -80,7 +80,7 @@ $ qtcreator
   - Tell qtcreator to use the correct terminal
     - Tools > Options > Environment (on the left) > System > Under "Terminal:" Select "/usr/bin/xterm -e"
 
-~[](figs/terminal.png)
+![](figs/terminal.png)
 
   - Click "New Project" or select "File > New File or Project"
   - Select "Other Project > Subdirs Project > Choose"
