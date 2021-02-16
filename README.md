@@ -73,9 +73,12 @@ Once you have cloned your team's GitHub repo, we'll open QT Creator to create a 
 
 ```
 $ pwd
-/home/smithjus/git_test/lab-2a/lab-2a
+/home/smithjus/labs/lab-2a/lab-2a
 $ qtcreator
 ```
+
+  - Tell qtcreator to use the correct terminal
+    - Tools > Options > Environment (on the left) > System > Under "Terminal:" Select "/usr/bin/xterm -e"
 
   - Click "New Project" or select "File > New File or Project"
   - Select "Other Project > Subdirs Project > Choose"
@@ -89,8 +92,22 @@ $ qtcreator
 
 ![](figs/new_cpp.png)
 
+  - In this window, add the namoe of the subproject. For now we will use the name _hello_. 
+    - Type _hello_ in the "Name:" field
+    - Leave the "Create in:"  field as is "/home/username/labs/lab-2a/lab-2a"
+  - Continue through the Build System screen with the default "qmake" selected
+  - Continue through the Kits screen with the default Desktop selected
+  - Again, nothing to do on the Summary screen. QTCreator is notifying you about all the files being created. 
+  - In the end you will have the following. Click the "Run"
+  
+  
 
-3. Now it's time to add a new subproject. Right-click the top item in your repository (for me that is "qtrepo"), then select "New Subproject." Again choose "Non-Qt project > C++ project" and name it "tools."
+
+
+--------------
+
+
+  - Now it's time to add a new subproject. Right-click the top item in your repository (for me that is "qtrepo"), then select "New Subproject." Again choose "Non-Qt project > C++ project" and name it "tools."
 
 
 4. Use the "tools" subproject for Lab 2b. Also, when creating new classes, use the "Add New ..." menu by right-clicking on the subproject name.
