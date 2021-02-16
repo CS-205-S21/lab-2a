@@ -10,9 +10,9 @@
 
 ## X11 Forwarding---Launching GUI applications on the server
 
-As mentioned previously in Lab 1, we will be conducting all our software development on the CS Department servers. To do so, we will need to be able to run GUI applications on the server. In Lab 1, we were able to run terminal commands on the server via ssh. To enable GUI applications, we just need to specify one additional flag, the -X or -Y flag, when we ssh to the lab server.
+As mentioned in Lab 1, we will be conducting all our software development on the CS Department servers. To do so, we will need to be able to run GUI applications remotely. In Lab 1, we ran terminal commands on the server via ssh. To enable GUI applications, we just need to specify one additional flag, the -X or -Y flag, when we ssh to the lab server.
 
-For the rest of the course, hen you connect to the lab server, be sure to specify the -X or -Y flag (depending on your local system). This will create a session with X11 forwarding enabled.
+For the rest of the course, when you connect to the lab server, be sure to specify the -X or -Y flag (depending on your local system). This will create a session with X11 forwarding enabled.
 
 ```
 $ ssh -Y smithjus@139.147.9.XXX   # Use -Y on Windows
