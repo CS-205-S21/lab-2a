@@ -77,13 +77,17 @@ $ pwd
 $ qtcreator
 ```
 
-1. Click "New Project" or select "File > New File or Project"
-2. Select "Other Project > Subdirs Project > Choose"
-3. In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process. Also, the field "Create in" is the directory where you put the repo.
+  - Click "New Project" or select "File > New File or Project"
+  - Select "Other Project > Subdirs Project > Choose"
+  - In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process. Also, the field "Create in" is the directory where you put the repo.
 
 ![](figs/newProj.png)
 
-2. Check that Git and Qt Creator are configured by completing the Git and Qt tutorial (see Tutorials section).
+  - This Kits bit is fiddly! The default kit is called Desktop. Just ask if you get stuck! By default "Desktop" should be selectected and you can just press "Next"
+  - You will note that Qt Creator is Git-aware, just click "Done and Add Subproject ".
+  - In this next window, pick "Non-QT Project" and "Plain C++ Project"
+
+![](figs/new_cpp.png)
 
 
 3. Now it's time to add a new subproject. Right-click the top item in your repository (for me that is "qtrepo"), then select "New Subproject." Again choose "Non-Qt project > C++ project" and name it "tools."
