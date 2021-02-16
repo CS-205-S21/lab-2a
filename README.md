@@ -1,4 +1,4 @@
-# Lab 2a — First project and subprojects
+# Lab 2a—First project and subprojects
 
 ## Lab goals
 1. Configuring Git and Qt Creator to work with each other, and creating the first project in the process.
@@ -6,9 +6,7 @@
 
 --------------------------------
 
-## Steps
-
-## X11 Forwarding---Launching GUI applications on the server
+## X11 Forwarding—Launching GUI applications on the server
 
 As mentioned in Lab 1, we will be conducting all our software development on the CS Department servers. To do so, we will need to be able to run GUI applications remotely. In Lab 1, we ran terminal commands on the server via ssh. To enable GUI applications, we just need to specify one additional flag, the -X or -Y flag, when we ssh to the lab server.
 
