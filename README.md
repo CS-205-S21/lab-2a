@@ -65,6 +65,7 @@ $ls -a     # The -a flag says show "all" files, including hidden files that star
 .  ..  .git  .gitignore  README.md
 ```
 
+Notice, that I have configured this repository to include a ```.gitignore``` file. 
 
 
 
