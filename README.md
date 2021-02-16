@@ -69,7 +69,6 @@ Notice, that I have configured this repository to include a ```.gitignore``` fil
 
 
 
-
 2. Check that Git and Qt Creator are configured by completing the Git and Qt tutorial (see Tutorials section).
 
 
