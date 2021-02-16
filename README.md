@@ -53,8 +53,18 @@ $ cd lab-2a     # Let's head into that new dir
 Now clone the starter code from GitHub
 
 ```
-$ git clone <>
+$ git clone git@github.com:CS-205-S21/lab-2a.git  # Paste the clone string from GitHub here. Mine is here for reference, your string will be different...
 ```
+
+Let's check to see that everything was cloned
+```
+$ ls
+lab-2a
+$ cd lab-2a
+$ls -a     # The -a flag says show "all" files, including hidden files that start with '.'
+.  ..  .git  .gitignore  README.md
+```
+
 
 
 
