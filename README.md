@@ -1,6 +1,6 @@
 # Lab 2a — First project and subprojects
 
-##Lab goals
+## Lab goals
 1. Configuring Git and Qt Creator to work with each other, and creating the first project in the process.
 2. Understanding Qt Creator subprojects to create a more structured work environment.
 
