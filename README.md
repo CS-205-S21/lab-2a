@@ -22,7 +22,7 @@ $ ssh -X smithjus@139.147.9.XXX   # Use -X on Mac and Linux
 
 
 ## Testing X11 Connection
-Once you have connected to your account with the -X or -Y flag on the Department server launch a graphical application, such as:
+Once you have connected to your account with the -X or -Y flag launch a graphical application, such as:
 
 ```$ xclock```
 or
@@ -65,9 +65,23 @@ $ls -a     # The -a flag says show "all" files, including hidden files that star
 .  ..  .git  .gitignore  README.md
 ```
 
-Notice, that I have configured this repository to include a ```.gitignore``` file. 
+Notice, that I have configured this repository to include a ```.gitignore``` file. This is an important file that helps you collaborate much more smoothly by telling git which files shouldn't be tracked. You can read more about .gitignore [here](https://docs.github.com/en/github/using-git/ignoring-files).
+
+## QT Creator
+Once you have cloned your team's GitHub repo, we'll open QT Creator to create a new QT project
 
 
+```
+$ pwd
+/home/smithjus/git_test/lab-2a/lab-2a
+$ qtcreator
+```
+
+1. Click "New Project" or select "File > New File or Project"
+2. Select "Other Project > Subdirs Project > Choose"
+3. In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process. Also, the field "Create in" is the directory where you put the repo.
+
+![](figs/newProj.png)
 
 2. Check that Git and Qt Creator are configured by completing the Git and Qt tutorial (see Tutorials section).
 
