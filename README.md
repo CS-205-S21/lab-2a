@@ -13,11 +13,7 @@ As mentioned in Lab 1, we will be conducting all our software development on the
 For the rest of the course, when you connect to the lab server, be sure to specify the -X or -Y flag (depending on your local system). This will create a session with X11 forwarding enabled.
 
 ```
-$ ssh -Y smithjus@139.147.9.XXX   # Use -Y on Windows
-```
-or
-```
-$ ssh -X smithjus@139.147.9.XXX   # Use -X on Mac and Linux
+$ ssh -Y smithjus@139.147.9.XXX
 ```
 
 
