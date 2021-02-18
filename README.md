@@ -43,7 +43,7 @@ Now open up the preferences from the top menu and go to the last tab ‘security
 Now, from your terminal, run:
 
 ```
-$ ssh -X smithjus@139.147.9.XXX   # Use -X on Mac and Linux
+$ ssh -Y smithjus@139.147.9.XXX
 ```
 
 If you are still unable to connect, try manually opening an XQuartz terminal and ssh'ing from there (instead of from terminal).
