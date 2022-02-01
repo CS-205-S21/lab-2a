@@ -136,19 +136,8 @@ smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git push
 ```
 
 ## 4. Testing with your lab partner
-Time to test if things are working. Perform the following steps:
-  - Start Qt Creator and click "+ New Project".
-  - Under projects choose "Import Project".
-  - Then select "Git Clone" and choose.
-  - For the location window, set the following options:
-
-```
-Repository: ssh url from github (yours will differ)
-Path : where you would like to place the repository.
-Directory : name of the repository.
-```
-
 - Once the checkout is successful, if you can compile and run the "hello" project, you are done!
+- Try making changes in coordination with your lab partner to practice resolving merge conflicts
 
 ## 5. Notes
 - You can experiment with the Git commands provided in the Tools menu, but you still need to work with the command line as you go along.
