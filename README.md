@@ -6,9 +6,9 @@
 
 --------------------------------
 
-## X11 Forwarding—Launching GUI applications on the server
+## 1. X11 Forwarding—Launching GUI applications on the server
 
-As mentioned in Lab 1, we will be conducting all our software development on the CS Department servers. To do so, we will need to be able to run GUI applications remotely. In Lab 1, we ran terminal commands on the server via ssh. To enable GUI applications, we just need to specify one additional flag, the -X or -Y flag, when we ssh to the lab server.
+As mentioned in Lab 1, you will have the option to conduct your software development on your local machine or on the CS Department servers. To use the server, we will need to be able to run GUI applications remotely. In Lab 1, we ran terminal commands on the server via ssh. To enable GUI applications, we just need to specify one additional flag, the -X or -Y flag, when we ssh to the lab server.
 
 For the rest of the course, when you connect to the lab server, be sure to specify the -X or -Y flag (depending on your local system). This will create a session with X11 forwarding enabled.
 
@@ -16,8 +16,9 @@ For the rest of the course, when you connect to the lab server, be sure to speci
 $ ssh -Y smithjus@139.147.9.XXX
 ```
 
+Depending on your machines configuration, X11 connections can sometimes be unreliable with QT. If you run into issues, see your lab instructor for instructions to install QT Creator on your local machine.
 
-## Testing X11 Connection
+### Testing X11 Connection
 Once you have connected to your account with the -X or -Y flag launch a graphical application, such as:
 
 ```$ xclock```
@@ -26,7 +27,7 @@ or
 
 You should see a clock (or the QT creator IDE) appear. (If you don't see anything immediatly, allow a minute or so for the command to be processed.) You can skip the next "Trobleshooting" section if the QT Creator GUI is visible.
 
-## Troubleshooting X11 Connections
+### Troubleshooting X11 Connections
 
 If you are on Mac, follow [these instructions](https://content.byui.edu/file/cddfb9c0-a825-4cfe-9858-28d5b4c218fe/1/Course/Setup-XQuartz.html) to install [xQuartz](https://www.xquartz.org) to enable X11 forwarding. 
 
@@ -40,7 +41,7 @@ $ open -a Xquartz
 
 Now open up the preferences from the top menu and go to the last tab ‘security’. There we need to make sure the “allow connections from network clients” is checked “on”.
 
-Now, from your terminal, run:
+Now, from your Xquartz terminal, run:
 
 ```
 $ ssh -Y smithjus@139.147.9.XXX
@@ -49,16 +50,13 @@ $ ssh -Y smithjus@139.147.9.XXX
 If you are still unable to connect, try manually opening an XQuartz terminal and ssh'ing from there (instead of from terminal).
 
 
-
-## Configure QT Creator and Git
+## 2. Configure QT Creator and Git
 In general, your workflow will be to (1) create a folder for each lab you are working on; (2) clone the repository for that lab into that folder; (3) then create a QT project in that folder. The subsequent steps will walk you through how to do that for the first time.
 
 ```
 $ cd ~          # Make sure you are in your home directory
 $ cd labs       # Keep all your labs in a dir called labs to keep things tidy :)
                 # You may need to create this dir if you haven't already
-$ mkdir lab-2a  # Make a new (appropriately named) dir for this lab
-$ cd lab-2a     # Let's head into that new dir
 ```
 
 Now clone the starter code from GitHub
@@ -78,13 +76,13 @@ $ls -a     # The -a flag says show "all" files, including hidden files that star
 
 Notice, that I have configured this repository to include a ```.gitignore``` file. This is an important file that helps you collaborate much more smoothly by telling git which files shouldn't be tracked. You can read more about .gitignore [here](https://docs.github.com/en/github/using-git/ignoring-files).
 
-## QT Creator
+## 3. QT Creator
 Once you have cloned your team's GitHub repo, we'll open QT Creator to create a new QT project
 
 
 ```
 $ pwd
-/home/smithjus/labs/lab-2a/lab-2a
+/home/smithjus/labs/lab-2a/
 $ qtcreator
 ```
 
@@ -95,7 +93,7 @@ $ qtcreator
 
   - Click "New Project" or select "File > New File or Project"
   - Select "Other Project > Subdirs Project > Choose"
-  - In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process. Also, the field "Create in" is the directory where you put the repo.
+  - In this window, **carefully** add the name of the directory where your repository is and the name of the repository you are using. In the example, Name is lab-2a, which is what you called it during the clone process, your name may differ slightly. Also, the field "Create in" is the directory where you put the repo.
 
 ![](figs/newProj.png)
 
@@ -137,7 +135,7 @@ smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git commit -m "Created lab-2a qt proj
 smithjus@cs205-1:~/git_test/lab-2a/lab-2a$ git push
 ```
 
-## Testing with your lab partner
+## 4. Testing with your lab partner
 Time to test if things are working. Perform the following steps:
   - Start Qt Creator and click "+ New Project".
   - Under projects choose "Import Project".
@@ -152,7 +150,7 @@ Directory : name of the repository.
 
 - Once the checkout is successful, if you can compile and run the "hello" project, you are done!
 
-## Notes
+## 5. Notes
 - You can experiment with the Git commands provided in the Tools menu, but you still need to work with the command line as you go along.
 
 - For the remainder of the project, you do not need to perform any branching — just focus on normal commits and pushes and pulls. The next part of the lab will just require you and your partner to work on separate classes.
